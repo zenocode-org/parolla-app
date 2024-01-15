@@ -2,20 +2,16 @@ import os
 import chainlit as cl
 from operator import itemgetter
 from typing import Optional
-from chainlit.client.base import ConversationDict
+
+from chainlit.types import ThreadDict
+from operator import itemgetter
+
 from langchain.chat_models import ChatOpenAI
-from langchain.prompts import ChatPromptTemplate
+from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.schema.output_parser import StrOutputParser
 from langchain.schema.runnable import Runnable, RunnablePassthrough, RunnableLambda
-from langchain.schema.runnable.config import RunnableConfig
 from langchain.memory import ConversationBufferMemory
 
-
-from langchain.chat_models import ChatOpenAI
-from langchain.prompts import ChatPromptTemplate
-from langchain.schema import StrOutputParser
-from langchain.schema.runnable import Runnable
-from langchain.schema.runnable.config import RunnableConfig
 
 from prompt import PROMPT_WITH_SENTENCES
 from auth import hash_password
@@ -23,13 +19,11 @@ from auth import hash_password
 
 def setup_runnable():
     memory = cl.user_session.get("memory")  # type: ConversationBufferMemory
-    model = ChatOpenAI(model_name="gpt-4-1106-preview", streaming=True)
+    model = ChatOpenAI(streaming=True)
     prompt = ChatPromptTemplate.from_messages(
         [
-            (
-                "system",
-                PROMPT_WITH_SENTENCES,
-            ),
+            ("system", PROMPT_WITH_SENTENCES),
+            MessagesPlaceholder(variable_name="history"),
             ("human", "{question}"),
         ]
     )
@@ -45,21 +39,22 @@ def setup_runnable():
     cl.user_session.set("runnable", runnable)
 
 
-
-
 # TODO: Create a database to store hashed passwords
 # Create a small endpoint to store user into a postgres database, Might use keycloak as a simple solution for that ?
 # Create a docker compose to deploy all of that
 
+
 @cl.password_auth_callback
-def auth_callback(email: str, password: str) -> Optional[cl.AppUser]:
+def auth_callback(email: str, password: str) -> Optional[cl.User]:
     # Retrieve the hashed password from the database
     hashed_password = hash_password(password)
 
     # Compare the input password with the hashed password
     # if bcrypt.checkpw(password.encode(), hashed_password.encode()):
-    if email == os.getenv("ADMIN_EMAIL") and hashed_password == os.getenv("ADMIN_PASSWORD_HASH"):
-        return cl.AppUser(username="admin", role="ADMIN", provider="credentials")
+    if email == os.getenv("ADMIN_EMAIL") and hashed_password == os.getenv(
+        "ADMIN_PASSWORD_HASH"
+    ):
+        return cl.User(identifier="admin", metadata={"role": "admin", "provider": "credentials"})
     else:
         return None
 
@@ -71,14 +66,14 @@ async def on_chat_start():
 
 
 @cl.on_chat_resume
-async def on_chat_resume(conversation: ConversationDict):
+async def on_chat_resume(thread: ThreadDict):
     memory = ConversationBufferMemory(return_messages=True)
-    root_messages = [m for m in conversation["messages"] if m["parentId"] == None]
+    root_messages = [m for m in thread["steps"] if m["parentId"] == None]
     for message in root_messages:
-        if message["authorIsUser"]:
-            memory.chat_memory.add_user_message(message["content"])
+        if message["type"] == "USER_MESSAGE":
+            memory.chat_memory.add_user_message(message["output"])
         else:
-            memory.chat_memory.add_ai_message(message["content"])
+            memory.chat_memory.add_ai_message(message["output"])
 
     cl.user_session.set("memory", memory)
 
