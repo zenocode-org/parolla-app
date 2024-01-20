@@ -13,9 +13,11 @@ services:
       PGPASSWORD: password123
       PGUSER: parolla
       PGDATABASE: parolla
-
+    ports:
+      - 5432:5432
   adminer:
     image: adminer
     restart: always
     ports:
       - 8080:8080
+
