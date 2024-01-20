@@ -1,0 +1,337 @@
+[
+    {
+        "label": "fileConfig",
+        "importPath": "logging.config",
+        "description": "logging.config",
+        "isExtraImport": true,
+        "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "engine_from_config",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "pool",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "chainlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "chainlit",
+        "description": "chainlit",
+        "detail": "chainlit",
+        "documentation": {}
+    },
+    {
+        "label": "itemgetter",
+        "importPath": "operator",
+        "description": "operator",
+        "isExtraImport": true,
+        "detail": "operator",
+        "documentation": {}
+    },
+    {
+        "label": "itemgetter",
+        "importPath": "operator",
+        "description": "operator",
+        "isExtraImport": true,
+        "detail": "operator",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadDict",
+        "importPath": "chainlit.types",
+        "description": "chainlit.types",
+        "isExtraImport": true,
+        "detail": "chainlit.types",
+        "documentation": {}
+    },
+    {
+        "label": "ChatOpenAI",
+        "importPath": "langchain.chat_models",
+        "description": "langchain.chat_models",
+        "isExtraImport": true,
+        "detail": "langchain.chat_models",
+        "documentation": {}
+    },
+    {
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain.prompts",
+        "description": "langchain.prompts",
+        "isExtraImport": true,
+        "detail": "langchain.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "MessagesPlaceholder",
+        "importPath": "langchain.prompts",
+        "description": "langchain.prompts",
+        "isExtraImport": true,
+        "detail": "langchain.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "StrOutputParser",
+        "importPath": "langchain.schema.output_parser",
+        "description": "langchain.schema.output_parser",
+        "isExtraImport": true,
+        "detail": "langchain.schema.output_parser",
+        "documentation": {}
+    },
+    {
+        "label": "Runnable",
+        "importPath": "langchain.schema.runnable",
+        "description": "langchain.schema.runnable",
+        "isExtraImport": true,
+        "detail": "langchain.schema.runnable",
+        "documentation": {}
+    },
+    {
+        "label": "RunnablePassthrough",
+        "importPath": "langchain.schema.runnable",
+        "description": "langchain.schema.runnable",
+        "isExtraImport": true,
+        "detail": "langchain.schema.runnable",
+        "documentation": {}
+    },
+    {
+        "label": "RunnableLambda",
+        "importPath": "langchain.schema.runnable",
+        "description": "langchain.schema.runnable",
+        "isExtraImport": true,
+        "detail": "langchain.schema.runnable",
+        "documentation": {}
+    },
+    {
+        "label": "ConversationBufferMemory",
+        "importPath": "langchain.memory",
+        "description": "langchain.memory",
+        "isExtraImport": true,
+        "detail": "langchain.memory",
+        "documentation": {}
+    },
+    {
+        "label": "RunnableConfig",
+        "importPath": "langchain.schema.runnable.config",
+        "description": "langchain.schema.runnable.config",
+        "isExtraImport": true,
+        "detail": "langchain.schema.runnable.config",
+        "documentation": {}
+    },
+    {
+        "label": "PROMPT_WITH_SENTENCES",
+        "importPath": "prompt",
+        "description": "prompt",
+        "isExtraImport": true,
+        "detail": "prompt",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "auth",
+        "description": "auth",
+        "isExtraImport": true,
+        "detail": "auth",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "bcrypt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "bcrypt",
+        "description": "bcrypt",
+        "detail": "bcrypt",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_offline",
+        "kind": 2,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "def run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.\n    Calls to context.execute() here emit the given string to the\n    script output.\n    \"\"\"\n    url = config.get_main_option(\"sqlalchemy.url\")",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_online",
+        "kind": 2,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "def run_migrations_online() -> None:\n    \"\"\"Run migrations in 'online' mode.\n    In this scenario we need to create an Engine\n    and associate a connection with the context.\n    \"\"\"\n    connectable = engine_from_config(\n        config.get_section(config.config_ini_section, {}),\n        prefix=\"sqlalchemy.\",\n        poolclass=pool.NullPool,\n    )",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "config = context.config\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel\n# target_metadata = mymodel.Base.metadata\ntarget_metadata = None",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "target_metadata",
+        "kind": 5,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "target_metadata = None\n# other values from the config, defined by the needs of env.py,\n# can be acquired:\n# my_important_option = config.get_main_option(\"my_important_option\")\n# ... etc.\ndef run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "setup_runnable",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def setup_runnable():\n    memory = cl.user_session.get(\"memory\")  # type: ConversationBufferMemory\n    model = ChatOpenAI(model=\"gpt-4-1106-preview\", streaming=True)\n    prompt = ChatPromptTemplate.from_messages(\n        [\n            (\"system\", PROMPT_WITH_SENTENCES),\n            MessagesPlaceholder(variable_name=\"history\"),\n            (\"human\", \"{question}\"),\n        ]\n    )",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "auth_callback",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def auth_callback(email: str, password: str) -> Optional[cl.User]:\n    # Retrieve the hashed password from the database\n    hashed_password = hash_password(password)\n    # Compare the input password with the hashed password\n    # if bcrypt.checkpw(password.encode(), hashed_password.encode()):\n    if email == os.getenv(\"ADMIN_EMAIL\") and hashed_password == os.getenv(\n        \"ADMIN_PASSWORD_HASH\"\n    ):\n        return cl.User(identifier=\"admin\", metadata={\"role\": \"admin\", \"provider\": \"credentials\"})\n    else:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "kind": 2,
+        "importPath": "auth",
+        "description": "auth",
+        "peekOfCode": "def hash_password(password):\n    salt=os.getenv('SALT_PASSWORD')\n    if salt:\n        hashed_password = hashlib.pbkdf2_hmac('sha256', password.encode('utf-8'), salt.encode('utf-8'), 100000)\n        return hashed_password.hex()",
+        "detail": "auth",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class User(Base):\n    __tablename__ = 'users'\n    id = Column(Integer, primary_key=True)\n    username = Column(String)\n    email = Column(String)\n    password = Column(String)\n    created_at = Column(DateTime(timezone=True), server_default=func.now())\n    updated_at = Column(DateTime(timezone=True), onupdate=func.now())\n    def verify_password(self, password):\n        pwhash = bcrypt.hashpw(password, self.password)",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "Base = declarative_base()\nclass User(Base):\n    __tablename__ = 'users'\n    id = Column(Integer, primary_key=True)\n    username = Column(String)\n    email = Column(String)\n    password = Column(String)\n    created_at = Column(DateTime(timezone=True), server_default=func.now())\n    updated_at = Column(DateTime(timezone=True), onupdate=func.now())\n    def verify_password(self, password):",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "PROMPT_WITH_SENTENCES",
+        "kind": 5,
+        "importPath": "prompt",
+        "description": "prompt",
+        "peekOfCode": "PROMPT_WITH_SENTENCES = \"\"\"\\\nTu es une Intelligence Artificielle professeur de langue Corse et de Français. Compte tenu de l'historique de conversation et du prochain message de l'étudiant, répond de manière très pédagogique pour l'aider dans son apprentissage du Corse. Tu dois aider l'étudiant à combler ses lacunes en langue Corse en proposant quand c'est nécessaire des exercices de pratique de la langue. Tu dois absolument répondre en Corse et en Français. Tu dois être proactif dans l'échange en relançant l'étudiant pour son apprentissage, sans jamais répondre à la place de l'étudiant (en séparant avec 2 retours à la ligne). Avant tout, c'est très important que tu corriger toutes les erreurs de l'étudiant (fautes de grammaire, orthographe, syntaxique, historique, culturel etc..). N'oublie pas que tu dois être très pédagogue et détailler des explication quand c'est nécessaire dans tes réponses.\nVoici des exemples de conversations en langue Corse et Française, utilises les uniquement pour savoir comment structurer tes phrases en langue Corse:\nBonghjornu Saveriu = Salute O Savé.\nTraduction: Bonjour Xavier.\n- Cumu và ?\nTraduction: - Comment ça va ?\n- Và bè !\nTraduction: - Ca va bien !\n- Cumu sì ? In forma ?",
+        "detail": "prompt",
+        "documentation": {}
+    },
+    {
+        "label": "COURSE_INTRODUCTION_MESSAGE",
+        "kind": 5,
+        "importPath": "prompt",
+        "description": "prompt",
+        "peekOfCode": "COURSE_INTRODUCTION_MESSAGE = \"\"\"Benvenutu in u mio corsu! Sò cuntéintu di accuglie in u mio corsu di lingua corsa. U mio scopu hè di t'aiutà à scopre è imparà a biddezza di a lingua corsa.\nTradution: Benvenutu in u mio corsu! Je suis ravi de t'accueillir dans mon cours de langue corse. Mon rôle est de t'aider à découvrir et à apprendre la magnifique langue corse.\n\\n\nPer principià, mi vulerìa valutà u to livellu di cunniscenza di a lingua corsa. Quale hè a to relazione cù a Corsica? Hai dighjà studiatu a lingua in passatu o hè a prima volta ? Raccuntami un pocu di più nantu à te è à e to motivazioni.\nTraduction: Pour commencer, j'aimerais évaluer ton niveau de connaissance de la langue corse. Quelle est ta relation avec la Corse ? Est-ce que tu as déjà étudié la langue auparavant ou est-ce que c'est la première fois ? Raconte-moi un peu plus sur toi et tes motivations.\n\"\"\"",
+        "detail": "prompt",
+        "documentation": {}
+    }
+]

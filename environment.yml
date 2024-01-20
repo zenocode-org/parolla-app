@@ -22,3 +22,7 @@ dependencies:
     - tiktoken
     - python-dotenv
     - chainlit
+    - sqlalchemy 
+    - alembic
+    - bcrypt
+    - psycopg2
