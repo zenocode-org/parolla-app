@@ -11,7 +11,7 @@ from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.schema.output_parser import StrOutputParser
 from langchain.schema.runnable import Runnable, RunnablePassthrough, RunnableLambda
 from langchain.memory import ConversationBufferMemory
-
+from langchain.schema.runnable.config import RunnableConfig
 
 from prompt import PROMPT_WITH_SENTENCES
 from auth import hash_password
@@ -19,7 +19,7 @@ from auth import hash_password
 
 def setup_runnable():
     memory = cl.user_session.get("memory")  # type: ConversationBufferMemory
-    model = ChatOpenAI(streaming=True)
+    model = ChatOpenAI(model="gpt-4-1106-preview", streaming=True)
     prompt = ChatPromptTemplate.from_messages(
         [
             ("system", PROMPT_WITH_SENTENCES),
